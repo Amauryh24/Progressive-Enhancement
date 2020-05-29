@@ -21,6 +21,17 @@ blockquote {
 .fermier {
   border-left: 3px solid rgb(223, 152, 152);
 }
+blockquote p {
+  font-style: italic;
+}
+blockquote .bien {
+  color: rgb(80, 212, 146);
+  text-transform: uppercase;
+}
+blockquote .mal {
+  color: rgb(212, 80, 80);
+  text-transform: uppercase;
+}
 
 a {
   text-decoration: none;
@@ -39,4 +50,27 @@ a:hover {
 a:active {
   background: #5bcdfa;
   color: #567683;
+}
+
+table {
+  width: 45%;
+  margin: 0 auto;
+
+  border-collapse: collapse;
+}
+table,
+td,
+th {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 15px 30px;
+}
+table tr:nth-child(2n) {
+  background-color: white;
+}
+table tr:nth-child(2n + 1) {
+  background-color: rgb(243, 243, 243);
 }
