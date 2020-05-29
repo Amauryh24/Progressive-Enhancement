@@ -1,0 +1,25 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  color: rgb(41, 12, 41);
+}
+
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #e675e6;
+}
+a:visited {
+  color: #ac57ac;
+}
+a:hover {
+  cursor: pointer;
+  background: #aae6fe;
+  border-bottom: 1px solid #567683;
+}
+a:active {
+  background: #5bcdfa;
+  color: #567683;
+}
