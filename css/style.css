@@ -9,11 +9,17 @@ body {
 }
 blockquote {
   width: 45%;
-  margin: 0 auto;
+  margin: 30px auto;
   font-size: 1.6em;
   background-color: rgb(243, 243, 243);
   border-left: 3px solid rgb(182, 181, 181);
   padding: 80px 30px;
+}
+.villageois {
+  border-left: 3px solid rgb(172, 89, 89);
+}
+.fermier {
+  border-left: 3px solid rgb(223, 152, 152);
 }
 
 a {
