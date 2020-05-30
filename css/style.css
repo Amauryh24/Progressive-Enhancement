@@ -2,218 +2,39 @@
   font-family: "noto";
   src: url("/fonts/Noto_Serif/NotoSerif-Regular.ttf");
 }
-
+@font-face {
+  font-family: "lora";
+  src: url("/fonts/Lora/Lora-VariableFont_wght.ttf");
+}
 body {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 1.4em;
-  line-height: 1.5em;
-  color: rgb(41, 12, 41);
   width: 90%;
   margin: 0 auto;
-  overflow-x: hidden;
-}
-body > header {
-  background-color: rgb(238, 130, 130);
-  padding: 20px;
-  margin-top: 100px;
-  z-index: 10;
-  position: relative;
-}
-body > header:before {
-  background-color: rgb(238, 130, 130);
-
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: -300px;
-  right: -300px;
-  bottom: 0px;
-  z-index: -1;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 h1 {
-  text-transform: uppercase;
-  color: white;
+  font-family: "lora";
+  font-weight: normal;
   font-size: 2em;
-  padding: 15px 0px;
+  line-height: 48px;
   text-align: center;
-}
-
-blockquote {
-  width: 45%;
-  margin: 30px auto;
-  font-size: 1.6em;
-  background-color: rgb(243, 243, 243);
-  border-left: 3px solid rgb(247, 206, 206);
-  box-shadow: 3px 3px 9px rgb(247, 206, 206);
-  padding: 80px 30px;
-  clear: both;
   font-style: italic;
-  font-family: "noto";
 }
-blockquote cite {
-  font-size: 0.7em;
-  font-family: "noto";
+p {
+  font-size: 1em;
+  max-width: 480px;
+  margin-bottom: 24px;
 }
 
-blockquote .bien {
-  color: rgb(80, 212, 146);
+h2 {
   text-transform: uppercase;
 }
-blockquote .mal {
-  color: rgb(212, 80, 80);
-  text-transform: uppercase;
+a {
+  text-decoration: underline;
+  color: rgb(59, 59, 105);
 }
 blockquote p {
-  text-align: left;
-}
-h2 {
-  text-align: center;
-  padding-top: 40px;
-}
-
-p {
-  padding: 20px 0;
-}
-ul {
-  margin: 0 auto;
-  width: 45%;
-  padding-bottom: 40px;
-}
-ul li {
-  padding: 20px 60px;
-  list-style-type: none;
-}
-
-ul li:nth-child(1) {
-  background-image: url(../img/bien.png);
-  background-repeat: no-repeat;
-  background-position: 0em 0.3em;
-}
-ul li:nth-child(2) {
-  background: url(../img/mal.png) no-repeat 0em 0.8em;
-}
-ul li:nth-child(3) {
-  background: url(../img/chat.png) no-repeat 0em 0.5em;
-}
-ul li:nth-child(2n) {
-  background-color: rgb(238, 130, 130);
-}
-ul li:nth-child(2n + 1) {
-  background-color: rgb(236, 152, 152);
-}
-
-#img-eau {
-  float: left;
-  margin: 0 20px 0 0;
-  width: 50%;
-  background-color: white;
-}
-#firstp {
-  font-weight: bold;
-  padding-top: 0px;
-}
-.sec1 {
-  font-size: 1.2em;
-  line-height: 1.4em;
-  text-align: justify;
-}
-
-figure {
-  width: 45%;
-  margin: 0 auto;
-  text-align: right;
-}
-figure img {
-  width: 100%;
-}
-#rocher {
-  padding-top: 50px;
-}
-
-p {
-  text-align: center;
-}
-
-.villageois {
-  border-left: 3px solid rgb(172, 89, 89);
-}
-.fermier {
-  border-left: 3px solid rgb(223, 152, 152);
-}
-/* arrivé ici*/
-
-a {
-  text-decoration: none;
-}
-a:link {
-  color: #e675e6;
-}
-a:visited {
-  color: #ac57ac;
-}
-a:hover {
-  cursor: pointer;
-  background: #aae6fe;
-  border-bottom: 1px solid #567683;
-}
-a:active {
-  background: #5bcdfa;
-  color: #567683;
-}
-
-table {
-  width: 45%;
-  margin: 0 auto;
-  border-collapse: collapse;
-}
-table,
-td,
-th {
-  border: 1px solid black;
-}
-
-th,
-td {
-  padding: 15px 30px;
-}
-table tr:nth-child(2n) {
-  background-color: white;
-}
-table tr:nth-child(2n + 1) {
-  background-color: rgb(243, 243, 243);
-}
-footer {
-  background-color: rgb(238, 130, 130);
-  position: relative;
-  padding: 50px 0;
-}
-footer:before {
-  content: "";
-  background-color: rgb(238, 130, 130);
-  position: absolute;
-  display: block;
-  top: 0px;
-  right: -200px;
-  left: -200px;
-  bottom: 0px;
-  z-index: -1;
-}
-h3 {
-  text-align: center;
-  padding-top: 20px;
-}
-footer p {
-  padding: 0;
-}
-footer p:nth-child(1),
-footer p:nth-child(2) {
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: white;
-}
-
-footer p:nth-child(3) {
-  padding-bottom: 30px;
+  font-family: "noto";
 }
