@@ -1,0 +1,36 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+p {
+  font-size: 1em;
+  max-width: 480px;
+  margin-bottom: 24px;
+}
+
+h1 {
+  width: 20%;
+  margin: 0 auto;
+  padding: 24px;
+  text-align: initial;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 100;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+h1 span {
+  font-size: 0.5em;
+  display: block;
+  text-align: right;
+}
+h2 {
+  text-transform: uppercase;
+}
+article {
+  margin: 0 auto;
+  width: 50%;
+  transform: translate(25%, 0px);
+}
