@@ -10,11 +10,26 @@ body {
   color: rgb(41, 12, 41);
   width: 90%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 body > header {
   background-color: rgb(238, 130, 130);
   padding: 20px;
   margin-top: 100px;
+  z-index: 10;
+  position: relative;
+}
+body > header:before {
+  background-color: rgb(238, 130, 130);
+
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: -300px;
+  right: -300px;
+  bottom: 0px;
+  z-index: -1;
 }
 
 h1 {
@@ -50,14 +65,16 @@ blockquote .mal {
   color: rgb(212, 80, 80);
   text-transform: uppercase;
 }
-
+blockquote p {
+  text-align: left;
+}
 h2 {
   text-align: center;
   padding-top: 40px;
 }
 
 p {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 ul {
   margin: 0 auto;
@@ -86,11 +103,37 @@ ul li:nth-child(2n) {
 ul li:nth-child(2n + 1) {
   background-color: rgb(236, 152, 152);
 }
-/* arrivé ici*/
 
+#img-eau {
+  float: left;
+  margin: 0 20px 0 0;
+  width: 50%;
+  background-color: white;
+}
 #firstp {
   font-weight: bold;
-  padding-top: 30px;
+  padding-top: 0px;
+}
+.sec1 {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: justify;
+}
+
+figure {
+  width: 45%;
+  margin: 0 auto;
+  text-align: right;
+}
+figure img {
+  width: 100%;
+}
+#rocher {
+  padding-top: 50px;
+}
+
+p {
+  text-align: center;
 }
 
 .villageois {
@@ -99,6 +142,7 @@ ul li:nth-child(2n + 1) {
 .fermier {
   border-left: 3px solid rgb(223, 152, 152);
 }
+/* arrivé ici*/
 
 a {
   text-decoration: none;
@@ -122,7 +166,6 @@ a:active {
 table {
   width: 45%;
   margin: 0 auto;
-
   border-collapse: collapse;
 }
 table,
@@ -141,20 +184,36 @@ table tr:nth-child(2n) {
 table tr:nth-child(2n + 1) {
   background-color: rgb(243, 243, 243);
 }
-
-#img-eau {
-  float: left;
-  margin: 0 60px;
-  width: 50%;
-  background-color: white;
+footer {
+  background-color: rgb(238, 130, 130);
+  position: relative;
+  padding: 50px 0;
 }
-
-.sec1 {
-  font-size: 1.2em;
-  line-height: 1.4em;
+footer:before {
+  content: "";
+  background-color: rgb(238, 130, 130);
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: -200px;
+  left: -200px;
+  bottom: 0px;
+  z-index: -1;
 }
-figure {
-  width: 50%;
+h3 {
   text-align: center;
-  margin: 0 auto;
+  padding-top: 20px;
+}
+footer p {
+  padding: 0;
+}
+footer p:nth-child(1),
+footer p:nth-child(2) {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: white;
+}
+
+footer p:nth-child(3) {
+  padding-bottom: 30px;
 }
