@@ -9,8 +9,8 @@
 body {
   width: 90%;
   margin: 0 auto;
-  font-family: Helvetica, sans-serif;
-  font-size: 16px;
+  font-family: "noto", Helvetica, sans-serif;
+  font-size: 18px;
   line-height: 24px;
 }
 
@@ -21,10 +21,11 @@ h1 {
   line-height: 48px;
   text-align: center;
   font-style: italic;
+  padding: 48px 0 0;
 }
 p {
   font-size: 1em;
-  max-width: 480px;
+  /* max-width: 480px; */
   margin-bottom: 24px;
 }
 
@@ -35,6 +36,62 @@ a {
   text-decoration: underline;
   color: rgb(59, 59, 105);
 }
+blockquote {
+  margin: 24px auto;
+  width: 50%;
+
+  background-color: #f7f7f7;
+  padding: 72px 24px;
+  border-left: 3px solid grey;
+
+  transform: translate(0%, 0px);
+}
 blockquote p {
-  font-family: "noto";
+  text-indent: -8px;
+  font-size: 1.6em;
+  line-height: 1.6em;
+  margin-bottom: 0px;
+  max-width: 768px;
+}
+
+article h2 {
+  text-align: center;
+  padding-top: 48px;
+}
+article ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-bottom: 48px;
+}
+article ul li {
+  background-color: #f7f7f7;
+
+  padding: 72px;
+  margin: 24px;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  text-align: left;
+}
+#img-eau {
+  float: left;
+  width: 45%;
+  padding: 0 48px 48px;
+}
+#img-eau + p {
+  padding-top: 240px;
+}
+.sec1 {
+  text-align: justify;
+  margin: 0 31%;
+  padding-bottom: 48px;
+}
+
+#rocher {
+  clear: both;
+  text-align: center;
+}
+#rocher img {
+  width: 40%;
 }
