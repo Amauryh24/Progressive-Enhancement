@@ -52,7 +52,7 @@ blockquote {
   font-style: italic;
   font-family: "noto";
 }
-blockquote header {
+blockquote cite {
   font-size: 0.7em;
   font-family: "noto";
 }
