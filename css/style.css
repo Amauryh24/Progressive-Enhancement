@@ -37,12 +37,9 @@ a {
 blockquote {
   margin: 24px auto;
   width: 50%;
-
   background-color: #f7f7f7;
   padding: 72px 24px;
   border-left: 3px solid grey;
-
-  transform: translate(0%, 0px);
 }
 blockquote.fermier {
   border-left: 3px solid rgb(199, 79, 49);
@@ -227,6 +224,8 @@ a:hover {
   }
   blockquote {
     width: 100%;
+    margin: 24px 0;
+    padding: 24px 0;
   }
   blockquote cite {
     width: 80%;
@@ -337,12 +336,6 @@ a:hover {
     width: 100%;
   }
 
-  footer p {
-    margin: 0;
-    text-align: center;
-    font-size: 0.8em;
-    line-height: 0.8em;
-  }
   footer p:nth-child(3) {
     margin-bottom: 24px;
   }
