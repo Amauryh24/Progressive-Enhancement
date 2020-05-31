@@ -50,6 +50,14 @@ blockquote {
 
   transform: translate(0%, 0px);
 }
+blockquote.fermier {
+  border-left: 3px solid rgb(199, 79, 49);
+}
+
+blockquote.villageois {
+  border-left: 3px solid rgb(251, 106, 106);
+}
+
 blockquote p {
   font-style: italic;
   text-indent: -8px;
@@ -71,13 +79,23 @@ article ul {
 }
 article ul li {
   background-color: #f7f7f7;
-
   padding: 72px;
   margin: 24px;
   width: 120px;
   height: 120px;
   border-radius: 100%;
   text-align: left;
+}
+article ul li:nth-child(1) {
+  background: url(../img/bien.png) no-repeat 6em 10em, #f7f7f7;
+}
+
+article ul li:nth-child(2) {
+  background: url(../img/mal.png) no-repeat 6em 10em, #f7f7f7;
+}
+
+article ul li:nth-child(3) {
+  background: url(../img/chat.png) no-repeat 6em 10em, #f7f7f7;
 }
 #img-eau {
   float: left;
@@ -125,10 +143,10 @@ h2 + p {
   text-transform: uppercase;
 }
 .bien {
-  color: rgb(72, 117, 72);
+  color: rgb(130, 200, 83);
 }
 .mal {
-  color: red;
+  color: rgb(251, 106, 106);
 }
 
 hr {
@@ -194,4 +212,114 @@ a {
 a:hover {
   font-size: 1.025em;
   color: rgb(206, 125, 33);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    background-color: red;
+  }
+
+  h1 {
+    font-size: 1.6em;
+    padding: 24px 0 0;
+  }
+  blockquote {
+    width: 100%;
+  }
+
+  blockquote p {
+    font-style: italic;
+    text-indent: -8px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .sec1 {
+    text-align: justify;
+    margin: 0 20%;
+    padding-bottom: 48px;
+  }
+  #img-eau {
+    padding: 0 24px 24px;
+  }
+  #img-eau + p {
+    padding-top: 180px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  footer p:nth-child(3) {
+    margin-bottom: 24px;
+  }
+  footer ul {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    width: 100%;
+    background-color: green;
+    font-size: 14px;
+    line-height: 14px;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 1em;
+    padding: 24px 0 0;
+  }
+  blockquote {
+    width: 100%;
+  }
+
+  blockquote p {
+    font-style: italic;
+    text-indent: -8px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 14px;
+  }
+
+  .sec1 {
+    text-align: justify;
+    margin: 0 20%;
+    padding-bottom: 48px;
+  }
+  #img-eau {
+    padding: 0 24px 24px;
+  }
+  #img-eau + p {
+    padding-top: 180px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  footer p:nth-child(3) {
+    margin-bottom: 24px;
+  }
+  footer ul {
+    width: 100%;
+  }
 }
