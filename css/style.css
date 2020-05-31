@@ -217,7 +217,7 @@ a:hover {
 @media screen and (max-width: 768px) {
   body {
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
   }
 
   h1 {
@@ -243,8 +243,16 @@ a:hover {
     margin: 0 20%;
     padding-bottom: 48px;
   }
+  #rocher,
+  #fermier,
   #img-eau {
-    padding: 0 24px 24px;
+    margin: 0;
+    padding: 0 0 24px;
+  }
+  #rocher img,
+  #fermier img,
+  #img-eau {
+    width: 100%;
   }
   #img-eau + p {
     padding-top: 180px;
@@ -265,20 +273,28 @@ a:hover {
   footer ul {
     width: 100%;
   }
+  footer::before {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
   body {
     width: 100%;
-    background-color: green;
+    /* background-color: green; */
     font-size: 14px;
     line-height: 14px;
     overflow-x: hidden;
   }
-
+  header {
+    width: 100%;
+  }
   h1 {
-    font-size: 1em;
+    font-size: 2.8em;
+    line-height: 0.8em;
     padding: 24px 0 0;
+    width: 90%;
+    margin: 0 auto;
   }
   blockquote {
     width: 100%;
@@ -289,22 +305,24 @@ a:hover {
     text-indent: -8px;
     font-size: 1.2em;
     line-height: 1.2em;
-
-    width: 80%;
-    margin: 0 auto;
     padding-top: 14px;
   }
 
   .sec1 {
     text-align: justify;
     margin: 0 20%;
-    padding-bottom: 48px;
+    padding-bottom: 28px;
   }
+  #rocher,
+  #fermier,
   #img-eau {
-    padding: 0 24px 24px;
+    margin: 0;
+    padding: 0 0 14px;
   }
-  #img-eau + p {
-    padding-top: 180px;
+  #rocher img,
+  #fermier img,
+  #img-eau {
+    width: 100%;
   }
 
   table {
@@ -315,11 +333,15 @@ a:hover {
     margin: 0;
     text-align: center;
     font-size: 0.8em;
+    line-height: 0.8em;
   }
   footer p:nth-child(3) {
-    margin-bottom: 24px;
+    margin-bottom: 14px;
   }
   footer ul {
     width: 100%;
+  }
+  footer::before {
+    display: none;
   }
 }
