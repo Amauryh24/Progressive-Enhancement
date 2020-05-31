@@ -24,12 +24,6 @@ h1 {
   font-style: italic;
   padding: 48px 0 0;
 }
-p {
-  font-size: 1em;
-  /* max-width: 480px; */
-  margin-bottom: 24px;
-}
-
 h2,
 h3 {
   text-transform: uppercase;
@@ -57,7 +51,11 @@ blockquote.fermier {
 blockquote.villageois {
   border-left: 3px solid rgb(251, 106, 106);
 }
-
+p {
+  font-size: 1em;
+  margin-bottom: 24px;
+  width: 520px;
+}
 blockquote p {
   font-style: italic;
   text-indent: -8px;
@@ -153,8 +151,8 @@ hr {
   display: none;
 }
 hr + p {
-  text-align: center;
   padding-bottom: 48px;
+  margin: 0 auto;
 }
 
 table {
@@ -183,7 +181,7 @@ footer {
   position: relative;
 }
 footer p {
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
 }
 footer p:nth-child(3) {
@@ -217,7 +215,10 @@ a:hover {
 @media screen and (max-width: 768px) {
   body {
     width: 100%;
-    /* background-color: red; */
+    /* background-color: green; */
+    font-size: 14px;
+    line-height: 14px;
+    overflow-x: hidden;
   }
 
   h1 {
@@ -227,7 +228,18 @@ a:hover {
   blockquote {
     width: 100%;
   }
-
+  blockquote cite {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 24px;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1em;
+    margin-bottom: 14px;
+    width: 420px;
+  }
   blockquote p {
     font-style: italic;
     text-indent: -8px;
@@ -240,8 +252,8 @@ a:hover {
 
   .sec1 {
     text-align: justify;
-    margin: 0 20%;
-    padding-bottom: 48px;
+    margin: 0 auto;
+    padding-bottom: 24px;
   }
   #rocher,
   #fermier,
@@ -257,13 +269,20 @@ a:hover {
   #img-eau + p {
     padding-top: 180px;
   }
-
+  h2 + p {
+    width: 90%;
+    text-align: center;
+    padding-bottom: 24px;
+  }
   table {
     width: 100%;
   }
-
+  footer {
+    margin: 24px 0;
+    padding: 24px 0;
+  }
   footer p {
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
     font-size: 0.8em;
   }
@@ -279,16 +298,6 @@ a:hover {
 }
 
 @media screen and (max-width: 500px) {
-  body {
-    width: 100%;
-    /* background-color: green; */
-    font-size: 14px;
-    line-height: 14px;
-    overflow-x: hidden;
-  }
-  header {
-    width: 100%;
-  }
   h1 {
     font-size: 2.8em;
     line-height: 0.8em;
@@ -299,30 +308,29 @@ a:hover {
   blockquote {
     width: 100%;
   }
+  p {
+    font-size: 1em;
+    line-height: 1em;
+    width: 90%;
+    margin: 14px auto;
+  }
 
   blockquote p {
-    font-style: italic;
     text-indent: -8px;
     font-size: 1.2em;
     line-height: 1.2em;
     padding-top: 14px;
   }
-
+  blockquote + p,
+  #fermier + p,
+  h3 + P {
+    width: 90%;
+    margin: 14px auto;
+  }
   .sec1 {
     text-align: justify;
-    margin: 0 20%;
-    padding-bottom: 28px;
-  }
-  #rocher,
-  #fermier,
-  #img-eau {
-    margin: 0;
-    padding: 0 0 14px;
-  }
-  #rocher img,
-  #fermier img,
-  #img-eau {
-    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 14px;
   }
 
   table {
@@ -336,7 +344,7 @@ a:hover {
     line-height: 0.8em;
   }
   footer p:nth-child(3) {
-    margin-bottom: 14px;
+    margin-bottom: 24px;
   }
   footer ul {
     width: 100%;
