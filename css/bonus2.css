@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "roboto";
+  src: url("/fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: "proxima";
+  src: url("/fonts/proxima_nova/ProximaNova-Regular.otf");
+}
+
+body {
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+p {
+  font-size: 1em;
+  width: 540px;
+  margin: 0 auto;
+  text-align: justify;
+  padding-bottom: 24px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  padding: 24px 0;
+  letter-spacing: 0.1em;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.4em;
+}
+#img01 {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: 3px, 4px;
+}
+ul {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+ul li {
+  width: 540px;
+  margin: 0 auto;
+}
+#police {
+  width: 70%;
+}
+#polices li {
+  border-top: 3px solid grey;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  width: 740px;
+}
+
+#polices li img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
