@@ -159,6 +159,7 @@ footer p {
   }
 
   h3 {
+    text-indent: 28px;
     padding-bottom: 14px;
   }
   article section {
@@ -173,15 +174,12 @@ footer p {
   article section img {
     width: 100%;
   }
-
+  ul li {
+    font-size: 0.8em;
+  }
   article {
     margin: 0 auto;
     width: 90%;
     transform: translate(0%, 0px);
-  }
-
-  footer p {
-    margin-top: 40px;
-    padding-top: 14px;
   }
 }
