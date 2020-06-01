@@ -241,7 +241,7 @@ a:hover {
   }
   blockquote p {
     font-style: italic;
-    text-indent: -8px;
+    text-indent: -6px;
     font-size: 1.2em;
     line-height: 1.2em;
 
@@ -315,7 +315,7 @@ a:hover {
   }
 
   blockquote p {
-    text-indent: -8px;
+    text-indent: -6px;
     font-size: 1.2em;
     line-height: 1.2em;
     padding-top: 14px;
