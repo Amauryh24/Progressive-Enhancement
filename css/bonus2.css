@@ -196,4 +196,7 @@ footer p a {
   ul li a {
     font-size: 0.8em;
   }
+  ul li {
+    padding-bottom: 20px;
+  }
 }
