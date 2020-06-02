@@ -10,23 +10,23 @@
 
 body {
   font-family: "roboto", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 p {
   font-size: 1em;
-  width: 540px;
+  width: 480px;
   margin: 0 auto;
   text-align: justify;
-  padding-bottom: 24px;
+  padding-bottom: 20px;
 }
 
 h1,
 h2,
 h3 {
   text-align: center;
-  padding: 24px 0;
+  padding: 20px 0;
   letter-spacing: 0.1em;
 }
 h1 {
@@ -38,7 +38,103 @@ h2 {
 h3 {
   font-size: 1.4em;
 }
-#img01 {
+
+article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.titleh2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  align-self: center;
+}
+.imgart {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  margin: auto;
+  width: 100%;
+  padding-bottom: 0px;
+  height: 150px;
+  object-fit: cover;
+}
+section {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(243, 243, 243);
+}
+section:nth-child(2n + 1) {
+  background-color: #db887d;
+}
+section:nth-child(2n) {
+  background-color: rgb(182, 219, 146);
+}
+section:nth-child(3n + 2) {
+  background-color: #caa9db;
+}
+
+.sec2 {
+  grid-row-start: 4;
+  grid-column-start: 2;
+}
+.sec3 {
+  grid-row-start: 5;
+  grid-column-start: 3;
+}
+.sec4 {
+  grid-row-start: 6;
+  grid-column-start: 1;
+}
+.sec5 {
+  grid-row-start: 7;
+  grid-column-start: 2;
+}
+.sec6 {
+  grid-row-start: 8;
+  grid-column-start: 3;
+}
+.sec7 {
+  grid-row-start: 9;
+  grid-column-start: 1;
+}
+
+.listeEx {
+  width: 480px;
+  margin: 0 auto;
+  list-style-type: circle;
+  padding-bottom: 20px;
+}
+#police {
+  width: 70%;
+}
+#polices li {
+  display: flex;
+  flex-direction: column;
+}
+#polices li p {
+  text-align: center;
+}
+
+#polices li img {
+  width: 30%;
+  margin: 0 auto;
+}
+
+#illustration {
+  clear: both;
+}
+#img07,
+#img08,
+img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  filter: sepia(1);
+}
+/*#img01 {
   width: 100%;
   height: 250px;
   object-fit: cover;
@@ -53,26 +149,6 @@ ul li {
   width: 540px;
   margin: 0 auto;
 }
-#police {
-  width: 70%;
-}
-#polices li {
-  border-top: 3px solid grey;
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  width: 740px;
-}
 
-#polices li img {
-  display: block;
-  width: 50%;
-  margin: 0 auto;
-  padding: 24px 0;
-}
 
-img {
-  display: block;
-  width: 50%;
-  margin: 0 auto;
-}
+ */
