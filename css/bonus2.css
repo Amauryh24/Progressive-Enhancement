@@ -184,11 +184,16 @@ footer p a {
     margin: auto;
   }
   p,
-  ul {
+  ul,
+  q {
     width: 80%;
+    text-align: left;
   }
 
   img {
     width: 100%;
+  }
+  ul li a {
+    font-size: 0.8em;
   }
 }
