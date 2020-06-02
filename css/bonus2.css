@@ -185,7 +185,8 @@ footer p a {
   }
   p,
   ul,
-  q {
+  q,
+  .listeEx {
     width: 80%;
     text-align: left;
   }
